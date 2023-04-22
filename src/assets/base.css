@@ -12,6 +12,7 @@ body {
     display: none;
 }
 
+
 @media screen and (max-width: 767px) {
     .bottom-nav {
         display: block;

@@ -1,3 +1,11 @@
+
+<script>
+import Calendar from '../components/Calendar.vue';
+export default {
+    components: { Calendar }
+}
+</script>
+
 <template>
     <div>
         <div class="title-bar">
@@ -9,7 +17,12 @@
         <div class="home-content">
             <section>
                 <h2>접수기간</h2>
-                <div>(달력)</div>
+                <div>
+                    <Calendar />
+                </div>
+                <div class="actions">
+                    <button class="btn primary">접수하기</button>
+                </div>
             </section>
             <section>
                 <h2>시험일정</h2>
@@ -28,6 +41,7 @@
     display: flex;
     gap: 16px;
 }
+
 .home-content section {
     flex-grow: 1;
 }

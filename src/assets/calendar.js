@@ -1,4 +1,4 @@
-class Calendar {
+export default class Calendar {
     constructor() {
       this.currentDate = new Date();
     }
@@ -44,7 +44,7 @@ class Calendar {
         let currentWeek = Array(monthStartDayOfWeek).fill(null);
     
         dates.forEach((date, index) => {
-          currentWeek.push(this.formatDate(date));
+          currentWeek.push(date);
     
           if ((index + monthStartDayOfWeek + 1) % 7 === 0 || index === dates.length - 1) {
             // Fill the remaining days of the last week with null
@@ -64,8 +64,4 @@ class Calendar {
       }
   }
   
-  // 켈린더 클래스 사용 예시
-  const calendar = new Calendar();
-  
-  console.log("이번달 날짜들:", calendar.getMonthDatesInWeeks());
   
