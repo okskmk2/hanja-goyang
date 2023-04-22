@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .bottom-nav {
+        display: block;
+    }
+}
