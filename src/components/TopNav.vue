@@ -65,11 +65,15 @@ header {
     display: flex;
     align-items: center;
     gap: 4px;
-    color: inherit;
+    color: #454545;
     text-decoration: none;
 }
 
-.router-link-exact-active {
-    font-weight: bold;
+.nav-menu li a .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.nav-menu li a.router-link-exact-active {
+    color: #000;
 }</style>
   

@@ -28,8 +28,8 @@
             </div>
             <div class="input-group">
                 <div class="input-label">성별</div>
-                <label>남자<input type="radio" name="sex" value="male"></label>
-                <label style="margin-left:8px">여자<input type="radio" name="sex" vale="female"></label>
+                <label><input type="radio" name="sex" value="male">남자</label>
+                <label style="margin-left:8px"><input type="radio" name="sex" vale="female">여자</label>
             </div>
             <div class="input-group">
                 <label for="" class="input-label">주소</label>

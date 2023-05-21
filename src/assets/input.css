@@ -3,9 +3,9 @@
 }
 
 .input-group input {
-    background-color: #F5F5F5;
+    background-color: #f7f7f7;
     border: 1px solid #BCBCBC;
-    padding:8px;
+    padding: 8px;
 }
 
 .input-group input[type=text] {
@@ -14,9 +14,9 @@
 }
 
 .input-group select {
-    background-color: #F5F5F5;
+    background-color: #f7f7f7;
     border: 1px solid #BCBCBC;
-    padding:8px;
+    padding: 8px;
     width: 100%;
 }
 
@@ -33,12 +33,22 @@
 }
 
 .btn {
+    font-size: 14px;
     padding: 8px 16px;
     border-radius: 4px;
     border-style: none;
+    cursor: pointer;
 }
 
 .btn.primary {
-    background-color: #3E68FF;
-    color:white;
+    --bg-h: 227;
+    --bg-s: 100%;
+    --bg-l: 62%;
+    background-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+    color: white;
+}
+
+.btn:hover {
+    --bg-l: 68%;
+    background-color: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
 }
